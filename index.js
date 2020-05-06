@@ -18,9 +18,14 @@ http.createServer(function(req ,res){
         console.log("saved!")
         
     })
-    fs.unlink('index.txt',function (err) {
+   /* fs.unlink('index.txt',function (err) {
         if(err ) throw err;
         console.log('File Deleted');
         
-    })
+    })*/
+    /*fs.rename('home.js','new.js',function(err) {
+        if (err) throw err;
+        console.log("Renamed")
+        
+    })*/
 }).listen(8081);
