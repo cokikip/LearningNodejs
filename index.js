@@ -8,5 +8,14 @@ http.createServer(function(req ,res){
         res.write(data);
         res.end();
         
+    });
+    fs.appendFile('myname.txt','Hello content is collins kiplagat', function(err){
+        if(err) throw err;
+        console.log('Saved!');
+    });
+    fs.writeFile('myname.txt','Coki',function(err) {
+        if(err) throw err;
+        console.log("saved!")
+        
     })
 }).listen(8081);
