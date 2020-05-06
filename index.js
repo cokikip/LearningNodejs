@@ -18,4 +18,9 @@ http.createServer(function(req ,res){
         console.log("saved!")
         
     })
+    fs.unlink('index.txt',function (err) {
+        if(err ) throw err;
+        console.log('File Deleted');
+        
+    })
 }).listen(8081);
